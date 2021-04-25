@@ -6,13 +6,14 @@
     "importHelpers": true,
     "strict": true,
     "jsx": "preserve",
-    "jsxFactory": "h",
+    // "jsxFactory": "h",
+    "jsxFactory": "VueTsxSupport",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    // "isolatedModules": true,
-    "lib": ["esnext", "dom"],
+    // "isolatedModules": true, // Cannot access ambient const enums when the '--isolatedModules' flag is provided.
+    "lib": ["esnext", "dom"], 
     "types": ["vite/client"],
     "declaration": true,
     "baseUrl": ".",
@@ -20,6 +21,6 @@
       "@/*": ["src/*"]
     },
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "node_modules/vue-tsx-support/enable-check.d.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }
