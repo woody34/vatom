@@ -1,7 +1,6 @@
 import { defineComponent, PropType, ExtractPropTypes } from 'vue'
 import { getEventTarget } from '../../utils/plugins';
 
-
 export type AImageUploaderProps = Readonly<ExtractPropTypes<typeof AImageUploader>>
 
 
