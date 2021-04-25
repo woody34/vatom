@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/woody34/vatom.git"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "scripts": {
     "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
