@@ -6,12 +6,14 @@ import babel from "vite-babel-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  alias: [
-    {
-      find: '@',
-      replacement: path.resolve(__dirname, 'src'),
-    },
-  ],
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src'),
+      },
+    ]
+  },
   plugins: [
     vue(),
     vueJsx({

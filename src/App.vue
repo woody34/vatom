@@ -1,17 +1,12 @@
 <template>
   <!-- <AImageUploader header="Some Header" description="some Desc" fileTypeHint="PNG, JPG, GIF up to 10MB" /> -->
-  <Test />
+  <test />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { AImageUploader, Test } from './components/'
 export default defineComponent({
   name: 'App',
-  components: {
-    AImageUploader,
-    Test
-  }
 })
 </script>
 

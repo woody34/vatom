@@ -5,6 +5,7 @@ export type AImageUploaderProps = Readonly<ExtractPropTypes<typeof AImageUploade
 
 
 export const AImageUploader = defineComponent({
+  name: 'a-image-uploader',
   props: {
     header: {
       type: String,
@@ -81,6 +82,7 @@ const addHeader = ({ header, description }: AImageUploaderProps) => (
 )
 
 export const Test = defineComponent({
+  name: 'test',
   setup: () => {
     return () => (<AImageUploader header="Some Header" description="some Desc" onUpdateFiles={files => {console.log(files)}} multiple />)
   }

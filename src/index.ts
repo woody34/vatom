@@ -1,6 +1,5 @@
 // import { AImageUploader } from './components'
 import * as components from './components'
-
 import './index.css'
 import { App } from 'vue'
 
@@ -12,14 +11,15 @@ import { App } from 'vue'
 //     }
 // }
 
-function install(Vue: App) {
-    for (const component in components) {
-        // @ts-expect-error
-        Vue.component(components[component].name, components[component])
-    }
-}
-
-
-export default { install }
+export default {
+	install(app: App) {
+        for (const component in components) {
+            // @ts-expect-error
+            console.log('component key', component, 'component: ', components[component])
+        }
+		Object.values(components).map(component => app.component(component.name, component));
+        console.log(app.config)
+	},
+};
 
 export * from './components'
