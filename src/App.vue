@@ -1,16 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <!-- <AImageUploader header="Some Header" description="some Desc" fileTypeHint="PNG, JPG, GIF up to 10MB" /> -->
+  <Test />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-
+import { AImageUploader, Test } from './components/'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    AImageUploader,
+    Test
   }
 })
 </script>
