@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
-import { AImageUploader } from './components/a-image-uploader/AImageUploader'
+import installComponents from '.'
+import App from './App.vue'
 import './index.css'
 
-const app = createApp(AImageUploader)
+const app = createApp(App)
+app.use(installComponents)
 app.mount('#app')
