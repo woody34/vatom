@@ -81,8 +81,8 @@ const addHeader = ({ header, description }: AImageUploaderProps) => (
   </div>
 )
 
-export const Test = defineComponent({
-  setup: () => {
-    return () => (<AImageUploader header="Some Header" description="some Desc" onUpdateFiles={files => {console.log(files)}} multiple />)
-  }
-})
+// export const Test = defineComponent({
+//   setup: () => {
+//     return () => (<AImageUploader header="Some Header" description="some Desc" onUpdateFiles={files => {console.log(files)}} multiple />)
+//   }
+// })
